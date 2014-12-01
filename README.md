@@ -51,6 +51,14 @@ NB On non-empty 'pages' are included in the plain text version:
     --11--
     PREFACE. -••i»J-»e-»- Jr EW portions of the British Empire possess stronger claims to attention than the County Palatine of Durham. During six centuries, it was, in almost every thing but the name, a miniature kingdom ; and its " mitred princes" still possess a consi derable share of their ancient and peculiar dignities. The important place which it occupies in ...
 
+To remove the page scan numbers, you can use 'grep' to do so. For example:
+
+    grep -v -e "^--[0-9]\+--" 004159587_01.txt > 004159587_01_nopages.txt
+
+To do this to a directory of files:
+
+    ls /cygdrive/c/Users/bosteen/Downloads/0*.txt | while read name; do grep -v -e "^--[0-9]\+--" $name > ${name%.*}_nopages.txt; done
+
 JSON example
 ------------
 
