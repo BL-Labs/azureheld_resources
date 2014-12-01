@@ -1,6 +1,25 @@
 Lists of items accessible from Azure storage
 --------------------------------------------
 
+Tags added or deleted from Flickr images:
+=========================================
+http://blmc.blob.core.windows.net/metadata/taghistory_20141120.tsv  [NB ~1.2GB]
+
+    **Headings**:
+    flickrid - photo id of the image
+    enteredtext - Text entered by user
+    from -
+    to -    Between which two dates did this tag appear or dissapear from the image (in epoch seconds)
+    tagid - tag id given by flickr to the tag
+    author - user id of commenter
+    tag - simplyfied tag (eg for use in flickr's URL schemes)
+    mode - 'add' or 'del' to show the tag either being added or removed.
+
+Majority of tag removals will be for the image rotation - 'rotate' or a tag of that ilk removed and replaced by a tag such as 'rotated' or 'rotatedcc' to signify that the image has been rotated.
+
+OCR data for the Book collection
+================================
+
 **General Filename format:**
 
 000000000_00.txt  or _text.json
