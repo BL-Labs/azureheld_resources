@@ -57,7 +57,7 @@ To remove the page scan numbers, you can use 'grep' to do so. For example:
 
 To do this to a directory of files:
 
-    ls /cygdrive/c/Users/bosteen/Downloads/0*.txt | while read name; do grep -v -e "^--[0-9]\+--" $name > ${name%.*}_nopages.txt; done
+    ls /path/to/ocr/textfiles/*.txt | while read name; do grep -v -e "^--[0-9]\+--" $name > ${name%.*}_nopages.txt; done
 
 JSON example
 ------------
