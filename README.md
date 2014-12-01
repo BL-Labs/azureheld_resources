@@ -8,8 +8,8 @@ http://blmc.blob.core.windows.net/metadata/taghistory_20141120.tsv  [NB ~1.2GB]
     **Headings**:
     flickrid - photo id of the image
     enteredtext - Text entered by user
-    from -
-    to -    Between which two dates did this tag appear or dissapear from the image (in epoch seconds)
+    from &
+    to -    This tag appeared or dissapeared between these two scan dates (in epoch seconds).
     tagid - tag id given by flickr to the tag
     author - user id of commenter
     tag - simplyfied tag (eg for use in flickr's URL schemes)
